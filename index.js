@@ -2,9 +2,9 @@ require('dotenv').config();
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const prefix = '!';
-const { token } = require("./config.json")
 bot.on('ready', () =>{
 	console.log('Bot Online!');
+	console.log(process.env['CLIENT_TOKEN']);
 })
 bot.on('guildMemberAdd', member=>{
 	const channel = member.guild.channels.cache.find(channel => channel.name === "general");
@@ -783,4 +783,4 @@ bot.on('message', message=>{
 		}
 	}
 });
-bot.login(token);
+bot.login(process.env['CLIENT_TOKEN']);
