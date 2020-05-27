@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const prefix = '!';
-const config = require('D:/discord-bot-ruski/config.json');
+const { token } = require("./config.json")
 bot.on('ready', () =>{
 	console.log('Bot Online!');
 })
@@ -782,4 +782,4 @@ bot.on('message', message=>{
 		}
 	}
 });
-bot.login(config.token);
+bot.login(token);
