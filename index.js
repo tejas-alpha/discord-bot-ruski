@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const prefix = '!';
-const config = require('./config.json');
+const config = require('D:/discord-bot-ruski/config.json');
 bot.on('ready', () =>{
 	console.log('Bot Online!');
 })
