@@ -4,7 +4,6 @@ const bot = new Discord.Client();
 const prefix = '!';
 bot.on('ready', () =>{
 	console.log('Bot Online!');
-	console.log(process.env['CLIENT_TOKEN']);
 })
 bot.on('guildMemberAdd', member=>{
 	const channel = member.guild.channels.cache.find(channel => channel.name === "general");
