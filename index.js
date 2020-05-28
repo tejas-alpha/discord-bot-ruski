@@ -72,7 +72,7 @@ bot.on('message', message=>{
 				.addField('-xyp9x', 'Xyp9x')
 				.addField('-magisk', 'Magisk')
 				.addField('-jugi', 'JUGi')
-				.attachFiles(['D:/discord bot/assets/astralis/logo/logo.png'])
+				.attachFiles(["./assets/astralis/logo/logo.png"])
 				.setThumbnail('attachment://logo.png')
 				.addField("Official Website", "[Click here](https://astralis.gg)")
 				.setFooter('Reply with an exclamation mark(!) prefixing every command.\nCommands are case sensitive.')
