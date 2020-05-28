@@ -782,4 +782,4 @@ bot.on('message', message=>{
 		}
 	}
 });
-bot.login(process.env['CLIENT_TOKEN']);
+bot.login();
